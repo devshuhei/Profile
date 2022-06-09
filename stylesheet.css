@@ -17,12 +17,28 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: rgba(18, 18, 18, 1);
+  color: rgba(255, 255, 255, 0.8);
+  width: 1100px;
+  margin: auto;
+}
+
+.container {
+  margin: 20px 0;
+}
+
 nav {
   display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 40px;
 }
 
 nav ul {
-  display: inline-block;
   display: flex;
   margin-left: auto;
 }
@@ -30,4 +46,8 @@ nav ul {
 nav li {
   margin-right: 20px;
   text-decoration: none;
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.8);
 }
