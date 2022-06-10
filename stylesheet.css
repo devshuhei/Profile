@@ -20,15 +20,15 @@ a {
 body {
   background-color: rgba(18, 18, 18, 1);
   color: rgba(255, 255, 255, 0.87);
+}
+
+.container {
   width: 1100px;
   margin: auto;
 }
 
-.container {
-  margin: 20px 0;
-}
-
 nav {
+  margin: 20px 0;
   display: flex;
   height: 60px;
   align-items: center;
@@ -48,12 +48,51 @@ nav li {
   text-decoration: none;
 }
 
-nav a {
+a {
   color: rgba(255, 255, 255, 0.87);
 }
 
 .greeting {
-  margin: 300px 0;
+  margin: 350px 0;
   font-size: 50px;
   text-align: center;
+}
+
+.contact-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.contact-bottom i {
+  margin-right: 10px;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid black;
+}
+
+.fa-brands {
+  margin-right: 10px;
+}
+
+.footer-texts {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.footer-texts p {
+  /* margin-left: auto; */
+}
+
+.footer-link {
+  margin-left: auto;
+}
+
+.footer-link a  {
+  margin-left: 20px;
 }
