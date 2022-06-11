@@ -58,13 +58,25 @@ a {
   text-align: center;
 }
 
-.contact-bottom {
+
+.contact {
   display: flex;
-  align-items: center;
+  position: relative;
+}
+
+.contact img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.container-contact {
+  display: flex;
 }
 
 .contact-bottom i {
   margin-right: 10px;
+  align-items: center;
 }
 
 footer {
@@ -83,10 +95,6 @@ footer {
   margin: auto;
   display: flex;
   align-items: center;
-}
-
-.footer-texts p {
-  /* margin-left: auto; */
 }
 
 .footer-link {
