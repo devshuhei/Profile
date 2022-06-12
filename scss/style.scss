@@ -1,3 +1,8 @@
+@mixin link-style(){
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.87);
+}
+
 body {
   font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
   background-color: rgba(18, 18, 18, 1);
@@ -8,13 +13,8 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.87);
-}
-
 .container {
-  width: 1100px;
+  width: 900px;
   margin: auto;
 }
 
@@ -32,30 +32,42 @@ nav {
     li {
       margin-right: 20px;
       text-decoration: none;
+      a {
+        @include link-style();
+      }
     }
   }
 }
 
-&.greeting {
+.greeting {
   margin: 350px 0;
   font-size: 50px;
   text-align: center;
 }
 
-&.contact {
-  display: flex;
-  position: relative;
+.contact-outer {
+  margin: 0 auto 20px auto;
+  width: 60%;
   img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    margin-left: 50px;
   }
-  &.container-contact {
+  .contact-inner {
+    align-items: center;
     display: flex;
   }
-  &.contact-bottom i {
-    margin-right: 10px;
+  .contact-link {
+    display: flex;
     align-items: center;
+    i {
+      margin-right: 10px;
+    }
+    a {
+      @include link-style();
+      display: block;
+    }
   }
 }
 
@@ -64,18 +76,17 @@ footer {
   display: flex;
   align-items: center;
   border-top: 1px solid black;
-  &.fa-brands {
+  .fa-brands {
     margin-right: 10px;
   }
-  &.footer-texts {
-    width: 1100px;
-    margin: auto;
+  .footer-texts {
     display: flex;
     align-items: center;
   }
-  &.footer-link {
+  .footer-link {
     margin-left: auto;
     a {
+      @include link-style();
       margin-left: 20px;
     }
   }
