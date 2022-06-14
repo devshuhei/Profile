@@ -10,7 +10,7 @@ li {
 
 .container {
   width: 900px;
-  margin: auto;
+  margin: 0 auto 50px auto;
 }
 
 nav {
@@ -51,11 +51,15 @@ nav ul li a {
   text-align: center;
 }
 
+.links {
+  width: 300px;
+  margin: auto;
+}
+
 .links .links-outer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  left: 50%;
 }
 
 .links .links-outer .links-inner {
@@ -81,28 +85,27 @@ nav ul li a {
   color: rgba(255, 255, 255, 0.87);
 }
 
-.contact-outer {
-  margin: 0 auto 20px auto;
-  width: 60%;
+.contact-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.contact-outer img {
+.contact-inner .contact-text {
+  margin: auto 0;
+}
+
+.contact-inner img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin-left: 50px;
 }
 
-.contact-outer .contact-inner {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contact-outer .contact-link {
+.contact-inner .contact-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,11 +114,11 @@ nav ul li a {
           align-items: center;
 }
 
-.contact-outer .contact-link i {
+.contact-inner .contact-link i {
   margin-right: 10px;
 }
 
-.contact-outer .contact-link a {
+.contact-inner .contact-link a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.87);
   display: block;
@@ -143,6 +146,7 @@ footer .footer-texts {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0;
 }
 
 footer .footer-link {
