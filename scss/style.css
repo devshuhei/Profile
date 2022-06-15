@@ -13,6 +13,10 @@ li {
   margin: 0 auto 50px auto;
 }
 
+.container h2 {
+  margin-bottom: 20px;
+}
+
 nav {
   margin: 20px 0;
   display: -webkit-box;
@@ -46,17 +50,72 @@ nav ul li a {
 }
 
 .greeting {
-  margin: 350px 0;
+  margin: 350px 0 500px 0;
   font-size: 50px;
   text-align: center;
 }
 
+.skills h2 {
+  margin-bottom: 0;
+}
+
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills ul li {
+  height: 100px;
+  width: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.87);
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px;
+}
+
+.skills ul li i {
+  display: block;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.skills ul li p {
+  margin-top: 5px;
+}
+
+.works li {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.works li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.works li a img {
+  width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.87);
+  border-radius: 10px;
+}
+
+.works li a p {
+  text-align: center;
+}
+
 .links {
-  width: 300px;
+  width: 280px;
   margin: auto;
 }
 
 .links .links-outer {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,21 +127,25 @@ nav ul li a {
   border: 2px solid rgba(255, 255, 255, 0.87);
   border-radius: 10px;
   text-align: center;
-  margin: 20px;
+  margin: 0 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.links .links-outer .links-inner i {
+.links .links-outer .links-inner a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.links .links-outer .links-inner a i {
   display: block;
   font-size: 40px;
   margin-top: 20px;
 }
 
-.links .links-outer .links-inner a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.87);
+.links .links-outer .links-inner a p {
+  margin-top: 5px;
 }
 
 .contact-inner {
@@ -109,19 +172,22 @@ nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact-inner .contact-link i {
-  margin-right: 10px;
 }
 
 .contact-inner .contact-link a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.87);
   display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-inner .contact-link a i {
+  margin-right: 10px;
 }
 
 footer {

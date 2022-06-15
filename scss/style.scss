@@ -11,6 +11,17 @@
   text-align: center;
 }
 
+@mixin box-layout {
+  i {
+    display: block;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  p {
+    margin-top: 5px;
+  }
+}
+
 body {
   font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
   background-color: rgba(18, 18, 18, 1);
@@ -25,7 +36,9 @@ li {
 .container {
   width: 900px;
   margin: 0 auto 50px auto;
-  // margin: auto;
+  h2 {
+      margin-bottom: 20px;
+    }
 }
 
 nav {
@@ -50,28 +63,58 @@ nav {
 }
 
 .greeting {
-  margin: 350px 0;
+  margin: 350px 0 500px 0;
   font-size: 50px;
   text-align: center;
 }
 
+.skills {
+  h2 {
+    margin-bottom: 0;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      @include links-layout();
+      @include box-layout();
+      margin: 20px;
+    }
+  }
+}
+
+.works {
+  li {
+    margin: 0 auto;
+    width: 30%;
+    a {
+      @include link-style();
+      img {
+        width: 100%;
+        border: 2px solid rgba(255, 255, 255, 0.87);
+        border-radius: 10px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
 .links {
-  width: 300px;
+  width: 280px;
   margin: auto;
   .links-outer {
+    margin: 0 auto;
     display: flex;
-    // justify-content: center;
     .links-inner {
       @include links-layout();
-      margin: 20px;
+      margin: 0 20px;
       align-items: center;
-      i {
-        display: block;
-        font-size: 40px;
-        margin-top: 20px;
-      }
       a {
         @include link-style();
+        @include box-layout();
       }
     }
   }
@@ -91,13 +134,14 @@ nav {
   }
   .contact-link {
     display: flex;
-    align-items: center;
-    i {
-      margin-right: 10px;
-    }
     a {
       @include link-style();
       display: block;
+      display: flex;
+      align-items: center;
+      i {
+        margin-right: 10px;
+      }
     }
   }
 }
