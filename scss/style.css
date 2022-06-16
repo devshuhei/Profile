@@ -17,7 +17,12 @@ li {
   margin-bottom: 20px;
 }
 
-nav {
+.header-container {
+  width: auto;
+  margin: 0 100px;
+}
+
+.header-container nav {
   margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,23 +33,23 @@ nav {
           align-items: center;
 }
 
-nav h1 {
+.header-container nav h1 {
   font-size: 35px;
 }
 
-nav ul {
+.header-container nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
 }
 
-nav ul li {
+.header-container nav ul li {
   margin-right: 20px;
   text-decoration: none;
 }
 
-nav ul li a {
+.header-container nav ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.87);
 }
@@ -53,6 +58,42 @@ nav ul li a {
   margin: 350px 0 500px 0;
   font-size: 50px;
   text-align: center;
+}
+
+.about-this-page-text {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.about-me {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me .about-me-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-me .about-me-inner .about-me-text {
+  margin: auto 0;
+  width: 50%;
+}
+
+.about-me .about-me-inner .about-me-text p {
+  margin: 10px;
+}
+
+.about-me .about-me-inner img {
+  margin-left: 30px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
 .skills h2 {
@@ -161,11 +202,20 @@ nav ul li a {
   margin: auto 0;
 }
 
-.contact-inner img {
+.contact-inner .contact-image {
+  margin-left: 50px;
+}
+
+.contact-inner .contact-image img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-left: 50px;
+}
+
+.contact-inner .contact-image p {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
 }
 
 .contact-inner .contact-link {
@@ -201,11 +251,9 @@ footer {
   border-top: 1px solid black;
 }
 
-footer .fa-brands {
-  margin-right: 10px;
-}
-
 footer .footer-texts {
+  width: 100%;
+  margin: 0 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

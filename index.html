@@ -11,22 +11,52 @@
     <link rel="stylesheet" href="./scss/style.css" />
   </head>
   <body>
-    <header class="container">
+    <header class="header-container container" id="Top">
       <nav>
         <h1>devshuhuei Profile</h1>
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Skills</a></li>
+          <li><a href="#AboutThisPage">About this page</a></li>
+          <li><a href="#AboutMe">About Me</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Works">Works</a></li>
+          <li><a href="#Links">Links</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
       <h1 class="greeting">こんにちは&#x1f44b;<br>伊原周平(devshuhei)です!</h1>
     </header>
     <main>
-      <div class="about container">
-        <h2>About</h2>
+      <div class="about-this-page container" id="AboutThisPage">
+        <h2>About this page</h2>
+        <div class="about-this-page-text">
+          <p>
+            こちらのサイトはdevshuheiこと、伊原周平のプロフィールページです。<br>
+            今まで触ってきた言語やツール、作ってきたサービスなどがまとめてあります。
+          </p>
+        </div>
       </div>
-      <div class="skills container">
+      <div class="about-me container" id="AboutMe">
+        <h2>About Me</h2>
+        <div class="about-me-inner">
+          <div class="about-me-text">
+            <p>
+              名前: 伊原周平(devshuhei)
+            </p>
+            <p>
+              学歴: 鹿児島高専電気電子工学科卒
+            </p>
+            <p>
+              出身地: 鹿児島県(現在は静岡県に在住)
+            </p>
+            <p>
+              Web系の言語に興味が出てきたのは約2年前ほどで、ようやく勉強する余裕が出てきたため、このサイトを作りました。
+              今後は、"ネットに生きる人たちのための少しニッチなWebサービス"の開発を中心に挑戦しようと思っています。
+            </p>
+          </div>
+          <img src="./img/profile.jpg" alt="プロフィール画像です。">
+        </div>
+      </div>
+      <div class="skills container" id="Skills">
         <h2>Skills</h2>
         <ul>
           <li>
@@ -59,21 +89,24 @@
           </li>
         </ul>
       </div>
-      <div class="works container">
+      <div class="works container" id="Works">
         <!-- <div class="works"> -->
           <h2>Works</h2>
           <div class="works-outer">
             <ul>
               <li>
-                <a href="#">
-                  <img src="./img/devshuheiProfile.png" alt="プロフィールサイトの画像です。">
-                  <p>devshuhei Profile</p>
-                </a>
+                  <a href="#Top">
+                    <img src="./img/devshuheiProfile.png" alt="プロフィールサイトの画像です。">
+                    <p>devshuhei Profile</p>
+                  </a>
+                  <p>
+                  devshuheiのプロフィールサイトです。
+                </p>
               </li>
             </ul>
           </div>
       </div>
-      <div class="container">
+      <div class="container" id="Links">
         <h2>Links</h2>
         <div class="links">
           <div class="links-outer">
@@ -92,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="contact container">
+      <div class="contact container" id="Contact">
         <h2>Contact</h2>
         <div class="contact-inner">
           <div class="contact-text">
@@ -104,7 +137,10 @@
               </a>
             </div>
           </div>
-          <img src="./img/profile.jpg" alt="プロフィール画像です。">
+          <div class="contact-image">
+            <img src="./img/profile.jpg" alt="プロフィール画像です。">
+            <p>Illistration/ノーコピライトガール</p>
+          </div>
         </div>
       </div>
     </main>
