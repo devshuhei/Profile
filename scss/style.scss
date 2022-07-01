@@ -1,0 +1,204 @@
+@mixin link-style(){
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+@mixin links-layout {
+  height: 100px;
+  width: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.87);
+  border-radius: 10px;
+  text-align: center;
+}
+
+@mixin box-layout {
+  i {
+    display: block;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  p {
+    margin-top: 5px;
+  }
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+  background-color: rgba(18, 18, 18, 1);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto 50px auto;
+  h2 {
+      margin-bottom: 20px;
+    }
+}
+
+.header-container {
+  width: auto;
+  margin: 0 100px;
+  nav {
+    margin: 20px 0;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    h1 {
+      font-size: 35px;
+    }
+    ul {
+      display: flex;
+      margin-left: auto;
+      li {
+        margin-right: 20px;
+        text-decoration: none;
+        a {
+          @include link-style();
+        }
+      }
+    }
+  }
+}
+
+.greeting {
+  margin: 350px 0 500px 0;
+  font-size: 50px;
+  text-align: center;
+}
+
+.about-this-page-text {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.about-me {
+  align-items: center;
+  .about-me-inner {
+    display: flex;
+    justify-content: center;
+    .about-me-text {
+      margin: auto 0;
+      width: 50%;
+      p {
+        margin: 10px;
+      }
+    }
+    img {
+      margin-left: 30px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.skills {
+  h2 {
+    margin-bottom: 0;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      @include links-layout();
+      @include box-layout();
+      margin: 20px;
+    }
+  }
+}
+
+.works {
+  li {
+    margin: 0 auto;
+    width: 30%;
+    a {
+      @include link-style();
+      img {
+        width: 100%;
+        border: 2px solid rgba(255, 255, 255, 0.87);
+        border-radius: 10px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.links {
+  width: 280px;
+  margin: auto;
+  .links-outer {
+    margin: 0 auto;
+    display: flex;
+    .links-inner {
+      @include links-layout();
+      margin: 0 20px;
+      align-items: center;
+      a {
+        @include link-style();
+        @include box-layout();
+      }
+    }
+  }
+}
+
+.contact-inner {
+  display: flex;
+  justify-content: center;
+  .contact-text {
+    margin: auto 0;
+  }
+  .contact-image {
+    margin-left: 50px;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+  .contact-link {
+    display: flex;
+    a {
+      @include link-style();
+      display: block;
+      display: flex;
+      align-items: center;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid black;
+  .footer-texts {
+    width: 100%;
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .footer-link {
+    margin-left: auto;
+    a {
+      @include link-style();
+      margin-left: 20px;
+    }
+  }
+}
