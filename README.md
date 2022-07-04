@@ -5,9 +5,9 @@ https://devshuhei.github.io/Profile/
 
 ```
 $PROJECT_ROOT
-│   # Html file
+│   # HTML file
 ├── img
 │   # Image files
 └── scss
-    # Scss and css files
+    # SCSS and CSS files
 ```
